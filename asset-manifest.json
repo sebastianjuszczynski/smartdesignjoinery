@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/smartdesignjoinery/static/css/main.a617e044.chunk.css",
-    "main.js": "/smartdesignjoinery/static/js/main.bdd40edb.chunk.js",
-    "main.js.map": "/smartdesignjoinery/static/js/main.bdd40edb.chunk.js.map",
-    "runtime-main.js": "/smartdesignjoinery/static/js/runtime-main.65b688e1.js",
-    "runtime-main.js.map": "/smartdesignjoinery/static/js/runtime-main.65b688e1.js.map",
-    "static/js/2.edd1042c.chunk.js": "/smartdesignjoinery/static/js/2.edd1042c.chunk.js",
-    "static/js/2.edd1042c.chunk.js.map": "/smartdesignjoinery/static/js/2.edd1042c.chunk.js.map",
-    "static/js/3.8e7ceed7.chunk.js": "/smartdesignjoinery/static/js/3.8e7ceed7.chunk.js",
-    "static/js/3.8e7ceed7.chunk.js.map": "/smartdesignjoinery/static/js/3.8e7ceed7.chunk.js.map",
+    "main.css": "/smartdesignjoinery/static/css/main.8317f1bd.chunk.css",
+    "main.js": "/smartdesignjoinery/static/js/main.061e9a46.chunk.js",
+    "main.js.map": "/smartdesignjoinery/static/js/main.061e9a46.chunk.js.map",
+    "runtime-main.js": "/smartdesignjoinery/static/js/runtime-main.eb489eb1.js",
+    "runtime-main.js.map": "/smartdesignjoinery/static/js/runtime-main.eb489eb1.js.map",
+    "static/js/2.a2e5161e.chunk.js": "/smartdesignjoinery/static/js/2.a2e5161e.chunk.js",
+    "static/js/2.a2e5161e.chunk.js.map": "/smartdesignjoinery/static/js/2.a2e5161e.chunk.js.map",
+    "static/js/3.e5eeafb4.chunk.js": "/smartdesignjoinery/static/js/3.e5eeafb4.chunk.js",
+    "static/js/3.e5eeafb4.chunk.js.map": "/smartdesignjoinery/static/js/3.e5eeafb4.chunk.js.map",
     "index.html": "/smartdesignjoinery/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/smartdesignjoinery/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.edd1042c.chunk.js.LICENSE.txt": "/smartdesignjoinery/static/js/2.edd1042c.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/smartdesignjoinery/static/media/logo.6ce24c58.svg"
+    "static/css/main.8317f1bd.chunk.css.map": "/smartdesignjoinery/static/css/main.8317f1bd.chunk.css.map",
+    "static/js/2.a2e5161e.chunk.js.LICENSE.txt": "/smartdesignjoinery/static/js/2.a2e5161e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.65b688e1.js",
-    "static/js/2.edd1042c.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.bdd40edb.chunk.js"
+    "static/js/runtime-main.eb489eb1.js",
+    "static/js/2.a2e5161e.chunk.js",
+    "static/css/main.8317f1bd.chunk.css",
+    "static/js/main.061e9a46.chunk.js"
   ]
 }
