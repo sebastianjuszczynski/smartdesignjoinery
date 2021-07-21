@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/smartdesignjoinery/static/css/main.a617e044.chunk.css",
+    "main.js": "/smartdesignjoinery/static/js/main.bdd40edb.chunk.js",
+    "main.js.map": "/smartdesignjoinery/static/js/main.bdd40edb.chunk.js.map",
+    "runtime-main.js": "/smartdesignjoinery/static/js/runtime-main.65b688e1.js",
+    "runtime-main.js.map": "/smartdesignjoinery/static/js/runtime-main.65b688e1.js.map",
+    "static/js/2.edd1042c.chunk.js": "/smartdesignjoinery/static/js/2.edd1042c.chunk.js",
+    "static/js/2.edd1042c.chunk.js.map": "/smartdesignjoinery/static/js/2.edd1042c.chunk.js.map",
+    "static/js/3.8e7ceed7.chunk.js": "/smartdesignjoinery/static/js/3.8e7ceed7.chunk.js",
+    "static/js/3.8e7ceed7.chunk.js.map": "/smartdesignjoinery/static/js/3.8e7ceed7.chunk.js.map",
+    "index.html": "/smartdesignjoinery/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/smartdesignjoinery/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.edd1042c.chunk.js.LICENSE.txt": "/smartdesignjoinery/static/js/2.edd1042c.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/smartdesignjoinery/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.65b688e1.js",
+    "static/js/2.edd1042c.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.bdd40edb.chunk.js"
+  ]
+}
