@@ -36,7 +36,7 @@ export const Overlay = styled.div`
 `;
 export const Text = styled.div`
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 0;
     padding: 10px;
     color: white;
