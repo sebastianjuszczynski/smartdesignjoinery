@@ -8,8 +8,4 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: url("../src/work.jpg");
-  background-size: cover;
-  height: 100vh;
-  overflow: hidden;
 }
