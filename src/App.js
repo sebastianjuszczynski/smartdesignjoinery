@@ -1,7 +1,10 @@
+import HeroImage from "./components/HeroImage";
+
+
 
 function App() {
   return (
-      <p>Work in progress...</p>
+      <HeroImage />
   );
 }
 
