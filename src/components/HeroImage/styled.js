@@ -31,10 +31,23 @@ export const Overlay = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0, 0.2);
+    background: rgba(0,0,0, 0.4);
     mix-blend-mode: overlay;
 `;
-
+export const Text = styled.div`
+    position: absolute;
+    top: 45%;
+    left: 0;
+    padding: 10px;
+    color: white;
+    margin-left: 100px;
+`;
+export const TextBig = styled.h2`
+    font-size: 3em;
+`;
+export const TextSmall = styled.h3`
+   font-size: 2em; 
+`;
 export const ArrowDown = styled.div`
     position: absolute;
     bottom: 0;
