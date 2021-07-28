@@ -1,12 +1,12 @@
-import { NavList, NavItem, NavLink } from './styled';
+import { NavList, NavItem } from './styled';
 
-const Navigation = () => {
+const Navigation = ({ open }) => {
     return (
-        <NavList>
-            <NavItem><NavLink href="#">Home</NavLink></NavItem>
-            <NavItem><NavLink href="#">Gallery</NavLink></NavItem>
-            <NavItem><NavLink href="#">Information</NavLink></NavItem>
-            <NavItem><NavLink href="#">Contact</NavLink></NavItem>
+        <NavList open={open}>
+            <NavItem>Home</NavItem>
+            <NavItem>Gallery</NavItem>
+            <NavItem>Information</NavItem>
+            <NavItem>Contact</NavItem>
         </NavList>
     )
 }
