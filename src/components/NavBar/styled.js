@@ -11,10 +11,23 @@ export const NavigationContainer = styled.div`
     color: white;
     height: 60px;
     text-transform: uppercase;
-    z-index: 1;   
+    z-index: 1;
+    background-color: rgba(0,0,0, 0.5);
+    
+    @media (max-width: 768px) {
+        height: 100px;
+        background-color: rgba(0,0,0,0);
+    }
 `;
 
 export const Logo = styled.img`
     margin-left: 100px;
     height: 60px;
+    
+    
+    @media (max-width: 768px) {
+        margin: 0 auto;
+        z-index: 1;
+        height: 100px;
+    }
 `;
