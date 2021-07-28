@@ -1,4 +1,3 @@
-import background from "../../assets/background.jpg";
 import NavBar from "../NavBar";
 import { Image, Overlay, Text, TextBig, TextSmall, ArrowDown, Arrow } from "./styled";
 

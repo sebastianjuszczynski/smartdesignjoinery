@@ -38,15 +38,36 @@ export const Text = styled.div`
     position: absolute;
     top: 55%;
     left: 0;
-    padding: 10px;
     color: white;
     margin-left: 100px;
+
+    @media (max-width: 768px) {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
 `;
 export const TextBig = styled.h2`
     font-size: 3em;
+    padding: 10px;
+    background: rgba(0,0,0, 0.6);
+    margin-bottom: 0;
+
+    @media (max-width: 768px) {
+        font-size: 1.8rem;
+
+    }
 `;
 export const TextSmall = styled.h3`
    font-size: 2em; 
+   padding: 10px;
+   background: rgba(0,0,0, 0.6);
+   margin-top: 10px;
+
+   @media (max-width: 768px) {
+        font-size: 1.4rem;
+
+    }
 `;
 export const ArrowDown = styled.div`
     position: absolute;
