@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Navigation from "../Navigation";
-import { Line, StyledBurger } from "./styled"
+import { StyledBurger } from "./styled"
 
 
 const Burger = () => {
