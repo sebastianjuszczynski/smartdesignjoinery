@@ -1,12 +1,34 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
+const activeClassName = "active";
+
+export const StyledNavLink = styled(NavLink).attrs(() => ({
+    activeClassName,
+}))`
+    display: flex;
+    list-style: none;
+    padding: 0;
+    letter-spacing: 2px;
+    margin-right: 100px;
+    font-size: 20px;
+
+
+`;
+export const NavItem = styled.li`
+    padding: 0 15px;
+    @media (max-width: 768px) {
+        padding: 10px 10px;
+        text-align: center;
+    }
+`;
 export const NavList = styled.ul`
     display: flex;
     list-style: none;
     padding: 0;
     letter-spacing: 2px;
     margin-right: 100px;
-    font-size: 20px;;
+    font-size: 20px;
 
     @media (max-width: 768px) {
         flex-flow: column nowrap;
@@ -22,12 +44,5 @@ export const NavList = styled.ul`
         justify-content: space-evenly;
         font-size: 32px;
         transition: transform 0.3s ease-in-out;
-    }
-`;
-export const NavItem = styled.li`
-    padding: 0 15px;
-    @media (max-width: 768px) {
-        padding: 10px 10px;
-        text-align: center;
     }
 `;
