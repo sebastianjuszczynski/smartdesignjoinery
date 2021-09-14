@@ -1,10 +1,10 @@
-import NavBar from "../NavBar";
+
 import { Image, Overlay, Text, TextBig, TextSmall, ArrowDown, Arrow } from "./styled";
 
 const HeroImage = () => {
     return (
         <>
-            <NavBar />
+            
             <Image />
             <Overlay />
             <Text>
