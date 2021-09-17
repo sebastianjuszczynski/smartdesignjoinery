@@ -1,5 +1,5 @@
-import { Container, Flexbox, Image, Image2, Image3, Title, Description, InfoContainer } from "./styled";
-import { Link } from "react-router-dom";
+import { Container, Flexbox, Image, Image2, Image3, Title, Description, InfoContainer, StyledLink } from "./styled";
+
 
 
 const Services = () => {
@@ -8,16 +8,16 @@ const Services = () => {
             <Flexbox>
                 <Image></Image>
                 <InfoContainer>
-                    <Title>Stair</Title>
+                    <Title>Stairs</Title>
                     <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
-                    <Link to="/gallery">See gallery</Link>
+                    <StyledLink to="/gallery">See gallery</StyledLink>
                 </InfoContainer>
             </Flexbox>
             <Flexbox>
                 <InfoContainer>
                     <Title>Wardrobe</Title>
                     <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
-                    <Link to="/information">See gallery</Link>
+                    <StyledLink to="/information">See gallery</StyledLink>
                 </InfoContainer>
                 <Image2></Image2>
             </Flexbox>
@@ -26,7 +26,7 @@ const Services = () => {
                 <InfoContainer>
                     <Title>Doors</Title>
                     <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
-                    <Link to="/pricing">See gallery</Link>
+                    <StyledLink to="/pricing">See gallery</StyledLink>
                 </InfoContainer>
             </Flexbox>
         </Container>

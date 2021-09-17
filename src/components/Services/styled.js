@@ -2,12 +2,27 @@ import styled from "styled-components";
 import Doors from "../../assets/doors.jpg";
 import Stairs from "../../assets/stairs.jpg";
 import Wardrobe from "../../assets/wardrobe.jpg";
+import { Link } from "react-router-dom";
 
-
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: 2px solid #6C3A13;
+    padding: 10px 15px;
+    color: #6C3A13;
+    transition: 0.3s;
+    &:hover {
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        background-color: #6C3A13;
+    }
+`;
 
 export const Container = styled.div`
     display: flex;
-    width: 80vw;
+    width: 1140px;
     height: 70vh;
     margin: 0 auto;
 `;
@@ -15,8 +30,7 @@ export const Container = styled.div`
 export const Flexbox = styled.div`
     width: 100%;
     height: 100%;
-    /* background: red; */
-    margin: 5px;
+    margin: 15px;
 `;
 
 export const Image = styled.img`
@@ -25,6 +39,7 @@ export const Image = styled.img`
     background-size: cover;
     height: 50%;
     width: 100%;
+    margin-bottom: 15px;
 `;
 
 export const Image2 = styled.img`
@@ -33,6 +48,7 @@ export const Image2 = styled.img`
     background-size: cover;
     height: 50%;
     width: 100%;
+    margin-top: 15px;
 `;
 
 export const Image3 = styled.img`
@@ -41,6 +57,7 @@ export const Image3 = styled.img`
     background-size: cover;
     height: 50%;
     width: 100%;
+    margin-bottom: 15px;
 `;
 
 export const Title = styled.h3`
@@ -54,18 +71,10 @@ export const Description = styled.p`
     text-align: center;
 `;
 
-export const Link = styled.a`
-    display: block;
-    width: 40%;
-    margin: 0 auto;
-    padding: 20px 14px;
-    border: 1px solid white;
-    text-align: center;
-    color: #683712;
-    text-transform: uppercase;
-    font-size: 20px;
-`;
-
 export const InfoContainer = styled.div`
-    height: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    background-color: #F4F5F6;
+    align-items: center;
 `;
