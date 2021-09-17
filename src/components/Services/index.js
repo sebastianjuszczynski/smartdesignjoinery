@@ -1,19 +1,33 @@
-import { Container, Flexbox, Image } from "./styled";
-import Stairs from "../../assets/stairs.jpg";
-import Wardrobe from "../../assets/wardrobe.jpg";
-import Doors from "../../assets/doors.jpg";
+import { Container, Flexbox, Image, Image2, Image3, Title, Description, InfoContainer } from "./styled";
+import { Link } from "react-router-dom";
+
 
 const Services = () => {
     return (
         <Container>
             <Flexbox>
-                <Image src={Stairs}></Image>
+                <Image></Image>
+                <InfoContainer>
+                    <Title>Stair</Title>
+                    <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
+                    <Link to="/gallery">See gallery</Link>
+                </InfoContainer>
             </Flexbox>
             <Flexbox>
-                <Image src={Wardrobe}></Image>
+                <InfoContainer>
+                    <Title>Wardrobe</Title>
+                    <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
+                    <Link to="/information">See gallery</Link>
+                </InfoContainer>
+                <Image2></Image2>
             </Flexbox>
             <Flexbox>
-                <Image src={Doors}></Image>
+                <Image3></Image3>
+                <InfoContainer>
+                    <Title>Doors</Title>
+                    <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
+                    <Link to="/pricing">See gallery</Link>
+                </InfoContainer>
             </Flexbox>
         </Container>
     )
