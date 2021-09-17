@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Menu from "../../assets/menu-mobile.jpg";
 
 export const NavigationContainer = styled.div`
     display: flex;
@@ -17,6 +18,9 @@ export const NavigationContainer = styled.div`
     @media (max-width: 768px) {
         height: 100px;
         background-color: #693912;
+        background-image: url(${Menu});
+        background-position: center;
+        background-size: cover;
     }
 `;
 
