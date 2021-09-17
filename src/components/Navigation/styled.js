@@ -38,7 +38,7 @@ export const NavList = styled.ul`
         background-position: center;
         background-size: cover;
         position: fixed;
-        transform: ${({ open }) => open ? "translateX(0)" : "translateX(100%)"};
+        transform: ${({ open }) => open ? "translateX(0)" : "translateX(150%)"};
         margin: 0;
         top: 0;
         right: 0;
