@@ -28,6 +28,6 @@ export const Logo = styled.img`
     @media (max-width: 768px) {
         margin: 0 auto;
         z-index: 2;
-        height: 100px;
+        height: 80px;
     }
 `;
