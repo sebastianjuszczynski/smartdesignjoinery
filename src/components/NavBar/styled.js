@@ -12,7 +12,7 @@ export const NavigationContainer = styled.div`
     height: 60px;
     text-transform: uppercase;
     z-index: 1;
-    background-color: rgba(0,0,0, 0.5);
+    background-color: ${({location}) => location === "/home" ? "rgba(0,0,0, 0.5)" : "black"};
     
     @media (max-width: 768px) {
         height: 100px;
