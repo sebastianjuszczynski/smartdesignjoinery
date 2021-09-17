@@ -81,3 +81,9 @@ export const Arrow = styled.a`
     color: white;
     font-size: 3em;
 `;
+export const Container = styled.div`
+    height: calc(100vh - 60px);
+    @media (max-width: 768px) {
+        height: calc(100vh - 100px);
+    }
+`;

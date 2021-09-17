@@ -1,9 +1,9 @@
 
-import { Image, Overlay, Text, TextBig, TextSmall, ArrowDown, Arrow } from "./styled";
+import { Image, Overlay, Text, TextBig, TextSmall, ArrowDown, Arrow, Container } from "./styled";
 
 const HeroImage = () => {
     return (
-        <>
+        <Container>
             
             <Image />
             <Overlay />
@@ -14,7 +14,7 @@ const HeroImage = () => {
             <ArrowDown class="arrow bounce">
                 <Arrow href="#"><i class="fas fa-chevron-down"></i></Arrow>
             </ArrowDown>
-        </>
+        </Container>
     )
 }
 export default HeroImage;
