@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const StyledBurger = styled.div`
-    width: 2rem;
-    height: 2rem;
+    width: 32px;
+    height: 32px;
     position: fixed;
-    top: 15px;
     right: 20px;
     display: none;
     z-index: 1;
@@ -16,8 +15,8 @@ export const StyledBurger = styled.div`
     }
 
     div {
-    width: 2rem;
-    height: 0.25rem;
+    width: 32px;
+    height: 4px;
     background-color: #fff;
     border-radius: 10px;
     transform-origin: 1px;
