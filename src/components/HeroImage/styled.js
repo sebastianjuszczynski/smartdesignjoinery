@@ -71,8 +71,9 @@ export const TextSmall = styled.h3`
 `;
 export const ArrowDown = styled.div`
     position: absolute;
+    width: 50px;
+    left: calc(50% - 25px);
     bottom: 0;
-    left: 50%;
     animation: ${bounce} 2s infinite;
     overflow: hidden;
 `;
