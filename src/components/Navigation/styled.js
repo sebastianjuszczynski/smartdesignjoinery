@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import Menu from "../../assets/menu-mobile.jpg";
 
 const activeClassName = "active";
 
@@ -17,15 +18,11 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     @media (max-width: 768px) {
         margin-right: 0;
         font-size: 25px;
-    }
-`;
-export const NavItem = styled.li`
-    padding: 0 15px;
-    @media (max-width: 768px) {
-        padding: 10px 10px;
+        padding: 30px 180px;
         text-align: center;
     }
 `;
+
 export const NavList = styled.ul`
     display: flex;
     list-style: none;
@@ -37,7 +34,9 @@ export const NavList = styled.ul`
 
     @media (max-width: 768px) {
         flex-flow: column nowrap;
-        background-color: #693912;
+        background-image: url(${Menu});
+        background-position: center;
+        background-size: cover;
         position: fixed;
         transform: ${({ open }) => open ? "translateX(0)" : "translateX(100%)"};
         margin: 0;
