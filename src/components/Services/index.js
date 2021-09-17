@@ -1,8 +1,18 @@
 import { Container, Flexbox, Image, Image2, Image3, Title, Description, InfoContainer, StyledLink } from "./styled";
+import { useState, useEffect } from "react";
 
 
 
 const Services = () => {
+    const [width, setWidth] = useState(window.innerWidth);
+    const breakpoint = 768;
+
+    useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
+
     return (
         <Container>
             <Flexbox>
@@ -14,12 +24,26 @@ const Services = () => {
                 </InfoContainer>
             </Flexbox>
             <Flexbox>
-                <InfoContainer>
-                    <Title>Wardrobe</Title>
-                    <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
-                    <StyledLink to="/information">See gallery</StyledLink>
-                </InfoContainer>
-                <Image2></Image2>
+                {width < breakpoint &&
+                    <>
+                        <Image2></Image2>
+                        <InfoContainer>
+                            <Title>Wardrobe</Title>
+                            <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
+                            <StyledLink to="/information">See gallery</StyledLink>
+                        </InfoContainer>
+                    </>
+                }
+                {width > breakpoint &&
+                    <>
+                        <InfoContainer>
+                            <Title>Wardrobe</Title>
+                            <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
+                            <StyledLink to="/information">See gallery</StyledLink>
+                        </InfoContainer>
+                        <Image2></Image2>
+                    </>
+                }
             </Flexbox>
             <Flexbox>
                 <Image3></Image3>
