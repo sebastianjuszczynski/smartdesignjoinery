@@ -8,12 +8,13 @@ const Burger = () => {
 
     return (
         <>
-        <StyledBurger open={open} onClick={() => setOpen(!open)}>
-            <div />
-            <div />
-            <div />
-        </StyledBurger>
-        <Navigation open={open}/>
+            <StyledBurger open={open} onClick={() => setOpen(!open)}>
+                <div />
+                <div />
+                <div />
+                <Navigation open={open} />
+            </StyledBurger>
+            <Navigation open={open} />
         </>
     )
 }
