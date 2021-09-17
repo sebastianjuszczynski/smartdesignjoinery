@@ -17,7 +17,12 @@ export const StyledLink = styled(Link)`
         border: 2px solid #ffffff;
         color: #ffffff;
         background-color: #6C3A13;
-    }
+    };
+    @media (max-width: 768px) {
+        font-size: 18px;
+        padding: 5px 12px;
+        
+    }    
 `;
 
 export const Container = styled.div`
@@ -25,6 +30,12 @@ export const Container = styled.div`
     width: 1140px;
     height: 70vh;
     margin: 0 auto;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+        
+    }
 `;
 
 export const Flexbox = styled.div`
@@ -40,6 +51,9 @@ export const Image = styled.img`
     height: 50%;
     width: 100%;
     margin-bottom: 15px;
+    @media (max-width: 768px) {
+        height: 40vh;
+    }
 `;
 
 export const Image2 = styled.img`
@@ -49,6 +63,9 @@ export const Image2 = styled.img`
     height: 50%;
     width: 100%;
     margin-top: 15px;
+    @media (max-width: 768px) {
+        height: 40vh;
+    }
 `;
 
 export const Image3 = styled.img`
@@ -58,6 +75,10 @@ export const Image3 = styled.img`
     height: 50%;
     width: 100%;
     margin-bottom: 15px;
+    @media (max-width: 768px) {
+        height: 40vh;
+        margin-top: 50px;
+    }
 `;
 
 export const Title = styled.h3`
@@ -65,10 +86,16 @@ export const Title = styled.h3`
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 30px;
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
 `;
 
 export const Description = styled.p`
     text-align: center;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 `;
 
 export const InfoContainer = styled.div`
