@@ -10,10 +10,14 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     list-style: none;
     padding: 0;
     letter-spacing: 2px;
-    margin-right: 100px;
+    margin-right: 15px;
     font-size: 20px;
-
-
+    text-decoration: none;
+    color: white;
+    @media (max-width: 768px) {
+        margin-right: 0;
+        font-size: 25px;
+    }
 `;
 export const NavItem = styled.li`
     padding: 0 15px;
@@ -29,6 +33,7 @@ export const NavList = styled.ul`
     letter-spacing: 2px;
     margin-right: 100px;
     font-size: 20px;
+    
 
     @media (max-width: 768px) {
         flex-flow: column nowrap;
@@ -44,5 +49,7 @@ export const NavList = styled.ul`
         justify-content: space-evenly;
         font-size: 32px;
         transition: transform 0.3s ease-in-out;
+        z-index: -1;
+        align-items: center;
     }
 `;
