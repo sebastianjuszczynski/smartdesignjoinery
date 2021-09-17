@@ -4,7 +4,7 @@ export const NavigationContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -16,7 +16,7 @@ export const NavigationContainer = styled.div`
     
     @media (max-width: 768px) {
         height: 100px;
-        background-color: rgba(0,0,0,0);
+        background-color: #693912;
     }
 `;
 
@@ -27,7 +27,7 @@ export const Logo = styled.img`
     
     @media (max-width: 768px) {
         margin: 0 auto;
-        z-index: 1;
+        z-index: 2;
         height: 100px;
     }
 `;
