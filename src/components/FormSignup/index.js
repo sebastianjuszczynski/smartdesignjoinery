@@ -14,11 +14,11 @@ const FormSignup = ({ submitForm }) => {
     <>
       <Form className='form' noValidate>
         <FormInputs>
-          <FormLabel>Username</FormLabel>
+          <FormLabel>Name</FormLabel>
           <FormInput
             type='text'
             name='username'
-            placeholder='Enter your username'
+            placeholder='Enter your name'
             value={values.username}
             onChange={handleChange}
           />
