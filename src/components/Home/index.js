@@ -3,6 +3,7 @@ import HeroImage from "../HeroImage"
 import OurService from '../OurService';
 import Services from '../Services';
 import FormHeader from '../FormHeader';
+import Form from '../Form/index';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
           <OurService />
           <Services />
           <FormHeader />
+          <Form />
         </>
     )
 }
