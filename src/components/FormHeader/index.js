@@ -1,9 +1,9 @@
 import React from 'react'
-import { FormHeader, FormSpan } from './styled';
+import { FormH3, FormSpan } from './styled';
 
 const FormHeader = () => {
     return (
-        <FormHeader>Contact <FormSpan>with us</FormSpan> and check<br />what we can do <FormSpan>together!</FormSpan></FormHeader>
+        <FormH3>Contact <FormSpan>with us</FormSpan> and check<br />what we can do <FormSpan>together!</FormSpan></FormH3>
     )
 }
 

@@ -2,6 +2,7 @@ import React from 'react';
 import HeroImage from "../HeroImage"
 import OurService from '../OurService';
 import Services from '../Services';
+import FormHeader from '../FormHeader';
 
 const Home = () => {
     return (
@@ -9,6 +10,7 @@ const Home = () => {
           <HeroImage />
           <OurService />
           <Services />
+          <FormHeader />
         </>
     )
 }

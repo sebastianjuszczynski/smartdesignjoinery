@@ -34,6 +34,7 @@ export const Container = styled.div`
         flex-direction: column;
         width: 90vw;
         align-items: center;
+        height: 100%;
         
     }
 `;
