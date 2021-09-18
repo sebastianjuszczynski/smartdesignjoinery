@@ -60,21 +60,16 @@ export const FormInputButton = styled.button`
     height: 50px;
     margin-top: 10px;
     border-radius: 2px;
-    background: linear-gradient(
-      90deg,
-      rgb(114, 66, 43) 0%,
-      rgb(70, 26, 4) 100%
-    );
+    background: rgb(70, 26, 4);
     outline: none;
     border: none;
     color: #fff;
-    font-size: 16px;
-    :hover {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    &:hover {
         cursor: pointer;
-        background: linear-gradient(
-            90deg,
-            rgb(154, 66, 43) 0%,
-            rgb(110, 26, 4) 100%
-    );    
+        background: rgb(114, 66, 43);    
     }
 `;
