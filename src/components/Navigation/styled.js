@@ -15,6 +15,9 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     font-size: 20px;
     text-decoration: none;
     color: white;
+    &.${activeClassName} {
+        font-weight: bold;
+    }
     @media (max-width: 768px) {
         margin-right: 0;
         font-size: 25px;
