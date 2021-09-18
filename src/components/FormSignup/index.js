@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
-import { Form, FormInputs, FormLabel, FormInput, FormTextarea, FormInputButton } from "./styled";
+import { FormInputs, FormLabel, FormInput, FormTextarea, FormInputButton } from "./styled";
+import emailjs from 'emailjs-com';
+import './style.css';
+
 
 
 const FormSignup = ({ submitForm }) => {
@@ -9,10 +12,22 @@ const FormSignup = ({ submitForm }) => {
     submitForm,
     validate
   );
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('yahoo', 'template_lgc1ezc', form.current, 'user_S84rE02uoYvJJVbKOZwK3')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      form.current.reset();
+  };
 
   return (
     <>
-      <Form className='form' noValidate>
+      <form className='form' noValidate onSubmit={sendEmail} ref={form}>
         <FormInputs>
           <FormLabel>Name</FormLabel>
           <FormInput
@@ -49,7 +64,7 @@ const FormSignup = ({ submitForm }) => {
         <FormInputButton type='submit' onClick={handleSubmit}>
           Send
         </FormInputButton>
-      </Form>
+      </form>
     </>
   );
 };
