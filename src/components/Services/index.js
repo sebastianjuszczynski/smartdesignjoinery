@@ -30,7 +30,7 @@ const Services = () => {
                         <InfoContainer>
                             <Title>Wardrobe</Title>
                             <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
-                            <StyledLink to="/information">See gallery</StyledLink>
+                            <StyledLink to="/gallery">See gallery</StyledLink>
                         </InfoContainer>
                     </>
                 }
@@ -39,7 +39,7 @@ const Services = () => {
                         <InfoContainer>
                             <Title>Wardrobe</Title>
                             <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
-                            <StyledLink to="/information">See gallery</StyledLink>
+                            <StyledLink to="/gallery">See gallery</StyledLink>
                         </InfoContainer>
                         <Image2></Image2>
                     </>
@@ -50,7 +50,7 @@ const Services = () => {
                 <InfoContainer>
                     <Title>Doors</Title>
                     <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
-                    <StyledLink to="/pricing">See gallery</StyledLink>
+                    <StyledLink to="/gallery">See gallery</StyledLink>
                 </InfoContainer>
             </Flexbox>
         </Container>
