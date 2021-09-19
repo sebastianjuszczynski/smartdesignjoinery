@@ -15,7 +15,7 @@ const HeroImage = () => {
                 <TextSmall>Vision, Passion, Purpose</TextSmall>
             </Text>
             <ArrowDown class="arrow bounce">
-                <Arrow href="#"><Link to="service" spy={true} smooth={true}><i class="fas fa-chevron-down"></i></Link></Arrow>
+                <Arrow><Link to="service" spy={true} smooth={true}><i class="fas fa-chevron-down"></i></Link></Arrow>
             </ArrowDown>
         </Container>
     )
