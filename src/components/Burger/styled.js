@@ -5,6 +5,7 @@ export const StyledBurger = styled.div`
     height: 32px;
     position: fixed;
     right: 20px;
+    top: 34px;
     display: none;
     z-index: 1;
 
