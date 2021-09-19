@@ -1,14 +1,15 @@
 import { useState, useEffect } from 'react';
 
 
-const useForm = (callback, validate) => {
+const useForm = (callback) => {
   const [values, setValues] = useState({
     username: '',
     email: '',
     message: ''
   });
   const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const isSubmitting = false;
+  
 
   const handleChange = e => {
     const { name, value } = e.target;
@@ -16,15 +17,17 @@ const useForm = (callback, validate) => {
       ...values,
       [name]: value
     });
+    
   };
+  // const submitting = () => {
+  //   setIsSubmitting(true);
+  // }
 
-  const handleSubmit = e => {
-    e.preventDefault();
+  // const handleSubmit = e => {
+    
+  //   setIsSubmitting(true);
 
-    setErrors(validate(values));
-    setIsSubmitting(true);
-
-  };
+  // };
 
   useEffect(
     () => {
@@ -32,10 +35,10 @@ const useForm = (callback, validate) => {
         callback();
       }
     },
-    [errors]
+    [errors, isSubmitting, callback]
   );
 
-  return { handleChange, handleSubmit, values, errors };
+  return { handleChange, values, errors, setValues, setErrors };
 };
 
 export default useForm;

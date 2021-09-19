@@ -9,14 +9,17 @@ import './style.css';
 
 
 const FormSignup = ({ submitForm }) => {
-  const { handleChange, handleSubmit, errors, values } = useForm(
+  const { handleChange, errors, values, setValues, setErrors, setIsSubmitting } = useForm(
     submitForm,
     validate
   );
   const form = useRef();
- 
+
   const sendEmail = (e) => {
     e.preventDefault();
+    setErrors(validate(values));
+    // setIsSubmitting(true);
+    
 
     emailjs.sendForm('yahoo', 'template_lgc1ezc', e.target, 'user_S84rE02uoYvJJVbKOZwK3')
       .then((result) => {
@@ -24,8 +27,13 @@ const FormSignup = ({ submitForm }) => {
       }, (error) => {
         console.log(error.text);
       });
-   
+
     e.target.reset();
+    setValues({
+      username: '',
+      email: '',
+      message: ''
+    });
     console.log(e.target);
   };
 
