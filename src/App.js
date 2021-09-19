@@ -5,6 +5,7 @@ import Pricing from "./components/Pricing";
 import Gallery from "./components/Gallery";
 import Home from "./components/Home";
 import { toHome, toGallery, toPricing, toInformation } from "./routes";
+import ScrollToTopComponent from "./ScrollToTopComponent";
 
 
 
@@ -12,6 +13,7 @@ import { toHome, toGallery, toPricing, toInformation } from "./routes";
 function App() {
   return (
     <HashRouter>
+      <ScrollToTopComponent />
       <NavBar />
     <Switch>
       <Route path={toHome()}>
