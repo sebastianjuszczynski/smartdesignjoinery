@@ -5,6 +5,7 @@ import Services from '../Services';
 import FormHeader from '../FormHeader';
 import Form from '../Form/index';
 import Footer from '../Footer/index';
+import ScrollToTop from '../ScrollToTop';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
           <FormHeader />
           <Form />
           <Footer />
+          <ScrollToTop />
 
         </>
     )
