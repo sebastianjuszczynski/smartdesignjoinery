@@ -4,6 +4,7 @@ import OurService from '../OurService';
 import Services from '../Services';
 import FormHeader from '../FormHeader';
 import Form from '../Form/index';
+import Footer from '../Footer/index';
 
 const Home = () => {
     return (
@@ -13,6 +14,8 @@ const Home = () => {
           <Services />
           <FormHeader />
           <Form />
+          <Footer />
+
         </>
     )
 }
