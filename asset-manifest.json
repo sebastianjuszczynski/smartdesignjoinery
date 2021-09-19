@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.a865e594.chunk.css",
-    "main.js": "/static/js/main.45558a6b.chunk.js",
-    "main.js.map": "/static/js/main.45558a6b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b2b1c9f0.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b2b1c9f0.js.map",
-    "static/js/2.6350f9c9.chunk.js": "/static/js/2.6350f9c9.chunk.js",
-    "static/js/2.6350f9c9.chunk.js.map": "/static/js/2.6350f9c9.chunk.js.map",
-    "static/js/3.ed5740c2.chunk.js": "/static/js/3.ed5740c2.chunk.js",
-    "static/js/3.ed5740c2.chunk.js.map": "/static/js/3.ed5740c2.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.a865e594.chunk.css.map": "/static/css/main.a865e594.chunk.css.map",
-    "static/js/2.6350f9c9.chunk.js.LICENSE.txt": "/static/js/2.6350f9c9.chunk.js.LICENSE.txt",
-    "static/media/background.3d2347f4.jpg": "/static/media/background.3d2347f4.jpg",
-    "static/media/doors.32621e39.jpg": "/static/media/doors.32621e39.jpg",
-    "static/media/logo.143159ca.jpg": "/static/media/logo.143159ca.jpg",
-    "static/media/menu-mobile.18808940.jpg": "/static/media/menu-mobile.18808940.jpg",
-    "static/media/stairs.3d13c6d6.jpg": "/static/media/stairs.3d13c6d6.jpg",
-    "static/media/wardrobe.641dc227.jpg": "/static/media/wardrobe.641dc227.jpg"
+    "main.css": "/smartdesignjoinery/static/css/main.a865e594.chunk.css",
+    "main.js": "/smartdesignjoinery/static/js/main.5d3f4f16.chunk.js",
+    "main.js.map": "/smartdesignjoinery/static/js/main.5d3f4f16.chunk.js.map",
+    "runtime-main.js": "/smartdesignjoinery/static/js/runtime-main.6780aa42.js",
+    "runtime-main.js.map": "/smartdesignjoinery/static/js/runtime-main.6780aa42.js.map",
+    "static/js/2.d575ccbe.chunk.js": "/smartdesignjoinery/static/js/2.d575ccbe.chunk.js",
+    "static/js/2.d575ccbe.chunk.js.map": "/smartdesignjoinery/static/js/2.d575ccbe.chunk.js.map",
+    "static/js/3.ed5740c2.chunk.js": "/smartdesignjoinery/static/js/3.ed5740c2.chunk.js",
+    "static/js/3.ed5740c2.chunk.js.map": "/smartdesignjoinery/static/js/3.ed5740c2.chunk.js.map",
+    "index.html": "/smartdesignjoinery/index.html",
+    "static/css/main.a865e594.chunk.css.map": "/smartdesignjoinery/static/css/main.a865e594.chunk.css.map",
+    "static/js/2.d575ccbe.chunk.js.LICENSE.txt": "/smartdesignjoinery/static/js/2.d575ccbe.chunk.js.LICENSE.txt",
+    "static/media/background.3d2347f4.jpg": "/smartdesignjoinery/static/media/background.3d2347f4.jpg",
+    "static/media/doors.32621e39.jpg": "/smartdesignjoinery/static/media/doors.32621e39.jpg",
+    "static/media/logo.143159ca.jpg": "/smartdesignjoinery/static/media/logo.143159ca.jpg",
+    "static/media/menu-mobile.18808940.jpg": "/smartdesignjoinery/static/media/menu-mobile.18808940.jpg",
+    "static/media/stairs.3d13c6d6.jpg": "/smartdesignjoinery/static/media/stairs.3d13c6d6.jpg",
+    "static/media/wardrobe.641dc227.jpg": "/smartdesignjoinery/static/media/wardrobe.641dc227.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b2b1c9f0.js",
-    "static/js/2.6350f9c9.chunk.js",
+    "static/js/runtime-main.6780aa42.js",
+    "static/js/2.d575ccbe.chunk.js",
     "static/css/main.a865e594.chunk.css",
-    "static/js/main.45558a6b.chunk.js"
+    "static/js/main.5d3f4f16.chunk.js"
   ]
 }
