@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
 import { FormInputs, FormLabel, FormInput, FormTextarea, FormInputButton } from "./styled";
@@ -9,29 +9,24 @@ import './style.css';
 
 
 const FormSignup = ({ submitForm }) => {
-  const { handleChange, handleSubmit, errors } = useForm(
+  const { handleChange, handleSubmit, errors, values } = useForm(
     submitForm,
     validate
   );
   const form = useRef();
-  const [values, setValues] = useState({});
-
+ 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('yahoo', 'template_lgc1ezc', form.current, 'user_S84rE02uoYvJJVbKOZwK3')
+    emailjs.sendForm('yahoo', 'template_lgc1ezc', e.target, 'user_S84rE02uoYvJJVbKOZwK3')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
-    setValues({
-      username: '',
-      email: '',
-      message: ''
-    });
-    form.current.reset();
-    console.log(form)
+   
+    e.target.reset();
+    console.log(e.target);
   };
 
 

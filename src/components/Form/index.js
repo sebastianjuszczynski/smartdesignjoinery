@@ -14,7 +14,7 @@ const Form = () => {
     <>
       <Container>
         {!isSubmitted ? (
-          <FormSignup submitForm={submitForm} />
+          <FormSignup submitForm={submitForm}/>
         ) : (
           window.location.reload(false)
         )}
