@@ -4,7 +4,7 @@ import { Title, Container } from "./styled";
 const OurService = () => {
     return (
         <Container>
-           <Title id="service">Our Service</Title>
+           <Title>Our Service</Title>
         </Container>
     )
 }
