@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterParagraph = styled.p`
-    position: ${({location}) => location === "/home" ? "relative" : "fixed"};
+    position: ${({location}) => location === "/home" || "/gallery" ? "relative" : "fixed"};
     bottom: 0;
     left: 0;
     right: 0;
