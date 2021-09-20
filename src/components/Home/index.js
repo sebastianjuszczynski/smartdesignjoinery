@@ -7,11 +7,13 @@ import Form from '../Form/index';
 
 import ScrollToTop from '../ScrollToTop';
 import ParallaxSection from '../ParallaxSection';
+import Motto from '../Motto';
 
 const Home = () => {
     return (
         <>
           <HeroImage />
+          <Motto />
           <ParallaxSection />
           <OurService />
           <Services />
