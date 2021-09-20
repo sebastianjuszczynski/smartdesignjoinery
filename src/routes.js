@@ -1,4 +1,4 @@
 export const toHome = () => "/home";
 export const toGallery = () => "/gallery";
-export const toPricing = () => "/pricing";
+export const toContact = () => "/contact";
 export const toInformation = () => "/information";

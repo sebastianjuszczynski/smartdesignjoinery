@@ -1,10 +1,11 @@
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Information from "./components/Information";
-import Pricing from "./components/Pricing";
+import Contact from "./components/Contact";
 import Gallery from "./components/Gallery";
 import Home from "./components/Home";
-import { toHome, toGallery, toPricing, toInformation } from "./routes";
+import Footer from './components/Footer';
+import { toHome, toGallery, toContact, toInformation } from "./routes";
 import ScrollToTopComponent from "./ScrollToTopComponent";
 
 
@@ -25,13 +26,14 @@ function App() {
       <Route path={toInformation()}>
         <Information />
       </Route>
-      <Route path={toPricing()}>
-        <Pricing />
+      <Route path={toContact()}>
+        <Contact />
       </Route>
       <Route>
         <Redirect to={toHome()} />
       </Route>
     </Switch>
+    <Footer />
   </HashRouter>
       
   );

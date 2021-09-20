@@ -1,5 +1,5 @@
 import { NavList, StyledNavLink } from './styled';
-import { toHome, toGallery, toPricing, toInformation } from "../../routes";
+import { toHome, toGallery, toContact, toInformation } from "../../routes";
 
 const Navigation = ({ open }) => {
     return (
@@ -7,7 +7,7 @@ const Navigation = ({ open }) => {
             <StyledNavLink to={toHome()}>Home</StyledNavLink>
             <StyledNavLink to={toGallery()}>Gallery</StyledNavLink>
             <StyledNavLink to={toInformation()}>Information</StyledNavLink>
-            <StyledNavLink to={toPricing()}>Pricing</StyledNavLink>
+            <StyledNavLink to={toContact()}>Contact</StyledNavLink>
         </NavList>
     )
 }
