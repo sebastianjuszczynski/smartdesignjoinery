@@ -116,7 +116,7 @@ import img113 from "../../assets/Gallery/113.jpg";
 import img114 from "../../assets/Gallery/114.jpg";
 import img115 from "../../assets/Gallery/115.jpg";
 
-import { MasonryContainer } from './styled';
+import { MasonryContainer, IMG } from './styled';
 
 
 const Grid = () => {
@@ -131,10 +131,9 @@ const Grid = () => {
                 <Masonry
                     gutter="10px">
                     {images.map((image, i) => (
-                        <img
+                        <IMG
                             key={i}
                             src={image}
-                            style={{ width: "100%", height: "380px" ,display: "block", objectFit: "cover", objectPosition: "center" }}
                             alt=""
                         />
                     ))}
