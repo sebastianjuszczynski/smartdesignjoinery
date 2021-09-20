@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const FooterParagraph = styled.p`
+    position: ${({location}) => location === "/home" ? "relative" : "fixed"};
+    bottom: 0;
+    left: 0;
+    right: 0;
     color: white;
     background-color: black;
     padding: 15px;

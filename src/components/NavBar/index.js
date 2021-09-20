@@ -6,7 +6,7 @@ import Burger from "../Burger";
 const NavBar = (props) => {
     return (
         <NavigationContainer location={props.location.pathname}>
-            {console.log(props)}
+            {/* {console.log(props)} */}
             <Logo src={LogoImg}></Logo>
             <Burger /> 
         </NavigationContainer>

@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { withRouter } from "react-router-dom";
 import { FooterParagraph } from './styled';
 
-const Footer = () => {
+const Footer = (props) => {
     return (
-        <FooterParagraph>Smart Design Joinery&copy;. All rights reserved</FooterParagraph>
+        <FooterParagraph location={props.location.pathname}>Smart Design Joinery&copy;. All rights reserved</FooterParagraph>
     )
 }
 
-export default Footer;
+export default withRouter(Footer);
