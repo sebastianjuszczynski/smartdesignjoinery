@@ -1,10 +1,9 @@
 import React from 'react'
+import Grid from '../Grid';
 
 const Gallery = () => {
     return (
-        <div>
-            Gallery
-        </div>
+      <Grid />
     )
 }
 
