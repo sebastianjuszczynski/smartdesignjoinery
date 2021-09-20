@@ -3,6 +3,7 @@ import { Image, Overlay, Text, TextBig, TextSmall, ArrowDown, Arrow, Container }
 import {Link} from "react-scroll";
 
 
+
 const HeroImage = () => {
 
     return (
