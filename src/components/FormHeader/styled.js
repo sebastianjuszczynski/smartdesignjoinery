@@ -10,6 +10,7 @@ export const FormH3 = styled.h3`
     @media (max-width: 768px) {
         font-size: 20px;
         margin-top: 30px;
+        margin-bottom: 50px;
     }
 `;
 export const FormSpan = styled.span`

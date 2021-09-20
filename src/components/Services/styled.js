@@ -54,6 +54,7 @@ export const Image = styled.img`
     margin-bottom: 15px;
     @media (max-width: 768px) {
         height: 40vh;
+        margin-bottom: 0;
     }
 `;
 
@@ -105,4 +106,7 @@ export const InfoContainer = styled.div`
     height: 50%;
     background-color: #F4F5F6;
     align-items: center;
+    @media (max-width: 768px) {
+        padding: 15px 0;
+    }
 `;
