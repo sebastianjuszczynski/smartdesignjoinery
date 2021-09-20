@@ -8,7 +8,7 @@ export const FormH3 = styled.h3`
     line-height: 1.5;
     margin: 50px 0;
     @media (max-width: 768px) {
-        font-size: 20px;
+        font-size: 30px;
         margin-top: 30px;
         margin-bottom: 50px;
     }
