@@ -7,12 +7,14 @@ import Home from "./components/Home";
 import Footer from './components/Footer';
 import { toHome, toGallery, toContact, toInformation } from "./routes";
 import ScrollToTopComponent from "./ScrollToTopComponent";
+import SimpleReactLightbox from 'simple-react-lightbox';
 
 
 
 
 function App() {
   return (
+    <SimpleReactLightbox>
     <HashRouter>
       <ScrollToTopComponent />
       <NavBar />
@@ -35,6 +37,7 @@ function App() {
     </Switch>
     <Footer />
   </HashRouter>
+  </SimpleReactLightbox>
       
   );
 }
