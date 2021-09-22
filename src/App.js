@@ -1,11 +1,11 @@
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import Information from "./components/Information";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 import Contact from "./components/Contact";
 import Gallery from "./components/Gallery";
 import Home from "./components/Home";
 import Footer from './components/Footer';
-import { toHome, toGallery, toContact, toInformation } from "./routes";
+import { toHome, toGallery, toContact, toPrivacyPolicy } from "./routes";
 import ScrollToTopComponent from "./ScrollToTopComponent";
 import SimpleReactLightbox from 'simple-react-lightbox';
 
@@ -25,8 +25,8 @@ function App() {
       <Route path={toGallery()}>
         <Gallery />
       </Route>
-      <Route path={toInformation()}>
-        <Information />
+      <Route path={toPrivacyPolicy()}>
+        <PrivacyPolicy />
       </Route>
       <Route path={toContact()}>
         <Contact />
