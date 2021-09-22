@@ -21,7 +21,7 @@ const FormSignup = ({ submitForm }) => {
     // setIsSubmitting(true);
     
 
-    emailjs.sendForm('yahoo', 'template_lgc1ezc', e.target, 'user_S84rE02uoYvJJVbKOZwK3')
+    emailjs.sendForm('Gmail', 'template_lgc1ezc', e.target, 'user_S84rE02uoYvJJVbKOZwK3')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
