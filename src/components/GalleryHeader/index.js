@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { FormH3, FormSpan } from './styled';
 
 const GalleryHeader = () => {
