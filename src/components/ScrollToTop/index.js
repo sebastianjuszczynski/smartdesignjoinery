@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import { useWindowScroll } from "react-use-window-scroll";
 import {ArrowUp, Arrow} from "./styled";
 
 const ScrollToTop = () => {
@@ -16,10 +15,12 @@ const ScrollToTop = () => {
 
 
     return (
-         
+         <>
+         {scrollY > breakpoint &&
         <ArrowUp onClick={scrollToTop}>
-            <Arrow>{scrollY > breakpoint &&<i className="icon fas fa-chevron-up"></i>}</Arrow>
-        </ArrowUp>
+            <Arrow><i className="icon fas fa-chevron-up"></i></Arrow>
+        </ArrowUp>}
+        </>
     );
 };
 
