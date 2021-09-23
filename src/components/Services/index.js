@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 const Services = () => {
     const [width, setWidth] = useState(window.innerWidth);
-    const breakpoint = 768;
+    const breakpoint = 1140;
 
     useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth)

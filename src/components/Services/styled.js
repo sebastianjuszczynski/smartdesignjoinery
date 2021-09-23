@@ -30,7 +30,7 @@ export const Container = styled.div`
     width: 1140px;
     height: 70vh;
     margin: 0 auto;
-    @media (max-width: 768px) {
+    @media (max-width: 1140px) {
         flex-direction: column;
         width: 90vw;
         align-items: center;
@@ -52,7 +52,7 @@ export const Image = styled.img`
     height: 50%;
     width: 100%;
     margin-bottom: 15px;
-    @media (max-width: 768px) {
+    @media (max-width: 1140px) {
         height: 40vh;
         margin-bottom: 0;
     }
@@ -65,7 +65,7 @@ export const Image2 = styled.img`
     height: 50%;
     width: 100%;
     margin-top: 15px;
-    @media (max-width: 768px) {
+    @media (max-width: 1140px) {
         height: 40vh;
     }
 `;
@@ -77,7 +77,7 @@ export const Image3 = styled.img`
     height: 50%;
     width: 100%;
     margin-bottom: 15px;
-    @media (max-width: 768px) {
+    @media (max-width: 1140px) {
         height: 40vh;
         margin-top: 50px;
     }

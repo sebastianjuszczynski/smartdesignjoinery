@@ -5,7 +5,7 @@ export const TextContainer = styled.div`
     top: 100px;
     left: 50%;
     color: white;
-    @media (max-width: 768px) {
+    @media (max-width: 1330px) {
         top: 10px;
         left: 0;
         padding: 0 10px;

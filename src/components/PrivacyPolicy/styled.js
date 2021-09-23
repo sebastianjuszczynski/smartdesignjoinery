@@ -12,7 +12,7 @@ export const PolicyContainer = styled.div`
     margin: 10px 200px;
     padding: 10px 30px;
     line-height: 1.3;
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
         margin: 0 15px;
     }
 `;

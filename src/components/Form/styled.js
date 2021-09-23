@@ -7,7 +7,7 @@ export const Container = styled.div`
     height: 400px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    @media (max-width: 768px) {
+    @media (max-width: 1140px) {
         width: 100%;
     }
 `;
