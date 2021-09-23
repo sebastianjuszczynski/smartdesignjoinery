@@ -76,6 +76,7 @@ export const ArrowDown = styled.div`
     bottom: 0;
     animation: ${bounce} 2s infinite;
     overflow: hidden;
+    cursor: pointer;
 `;
 export const Arrow = styled.a`
     color: white;
