@@ -1,5 +1,6 @@
 import React from 'react';
 import PrivacyPolicyHeader from '../PrivacyPolicyHeader';
+import ScrollToTop from '../ScrollToTop';
 import { PolicyH4, PolicySection, PolicyParagraph, Container, PolicyContainer } from "./styled"
 
 
@@ -59,6 +60,7 @@ const PrivacyPolicy = () => {
                     </PolicyParagraph>
                 </PolicyContainer>
             </Container>
+            <ScrollToTop />
         </>
     )
 }

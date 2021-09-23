@@ -6,7 +6,7 @@ const Navigation = ({ open }) => {
         <NavList open={open}>
             <StyledNavLink to={toHome()}>Home</StyledNavLink>
             <StyledNavLink to={toGallery()}>Gallery</StyledNavLink>
-            <StyledNavLink to={toPrivacyPolicy()}>Privacy Policy</StyledNavLink>
+            <StyledNavLink to={toPrivacyPolicy()}>Policy</StyledNavLink>
             <StyledNavLink to={toContact()}>Contact</StyledNavLink>
         </NavList>
     )
