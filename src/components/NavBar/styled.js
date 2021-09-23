@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Menu from "../../assets/menu-mobile.jpg";
+import { NavLink } from "react-router-dom";
 
 export const NavigationContainer = styled.div`
     display: flex;
@@ -33,5 +34,12 @@ export const Logo = styled.img`
         margin: 0 auto;
         z-index: 2;
         height: 80px;
+    }
+`;
+
+export const StyledNavLink = styled(NavLink)`
+    display: block;
+    @media (max-width: 768px) {
+        margin: 0 auto;
     }
 `;
