@@ -9,7 +9,7 @@ const textVariants = {
     },
     animate: {
         x: 0,
-        transition: { type: "spring" }
+        transition: { type: "spring", stiffness: 150  }
     },
 };
 const nextVariants = {
@@ -18,7 +18,7 @@ const nextVariants = {
     },
     animate: {
         x: 0,
-        transition: { type: "spring", delay: 0.5 }
+        transition: { type: "spring", delay: 0.5, stiffness: 150 }
     },
 };
 
