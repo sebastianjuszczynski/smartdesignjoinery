@@ -118,6 +118,21 @@ import img115 from "../../assets/Gallery/115.jpg";
 
 import { MasonryContainer, IMG } from './styled';
 import { SRLWrapper } from "simple-react-lightbox";
+import { motion } from 'framer-motion';
+
+const variants = {
+    visible: i => ({
+        opacity: 0.8,
+        scale: 1,
+        transition: {
+            delay: i * 0.15
+        },
+    }),
+    hidden: {
+        opacity: 0,
+        scale: 1.5
+    },
+}
 
 
 const Grid = () => {
@@ -125,22 +140,27 @@ const Grid = () => {
 
     return (
         <SRLWrapper>
-        <MasonryContainer>
-            <ResponsiveMasonry
-                columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1100: 4 }}
-            >
-                <Masonry
-                    gutter="10px">
-                    {images.map((image, i) => (
-                        <IMG
-                            key={i}
-                            src={image}
-                            alt=""
-                        />
-                    ))}
-                </Masonry>
-            </ResponsiveMasonry>
-        </MasonryContainer>
+            <MasonryContainer>
+                <ResponsiveMasonry
+                    columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1100: 4 }}
+                >
+                    <Masonry
+                        gutter="10px">
+                        {images.map((image, i) => (
+                            <IMG as={motion.img}
+                                key={i}
+                                src={image}
+                                alt=""
+                                custom={i}
+                                animate="visible"
+                                initial='hidden'
+                                variants={variants}
+                                whileHover={{ opacity: 1 }}
+                            />
+                        ))}
+                    </Masonry>
+                </ResponsiveMasonry>
+            </MasonryContainer>
         </SRLWrapper>
     )
 }
