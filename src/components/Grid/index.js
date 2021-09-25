@@ -123,14 +123,12 @@ import { motion } from 'framer-motion';
 const variants = {
     visible: i => ({
         opacity: 0.8,
-        scale: 1,
         transition: {
             delay: i * 0.15
         },
     }),
     hidden: {
         opacity: 0,
-        scale: 1.5
     },
 }
 
