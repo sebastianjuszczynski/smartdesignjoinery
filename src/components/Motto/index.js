@@ -4,15 +4,6 @@ import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from "framer-motion";
 
-// const textVariants = {
-//     initial: {
-//         x: -300
-//     },
-//     animate: {
-//         x: 0,
-//         transition: { type: "spring" }
-//     },
-// };
 
 const Motto = () => {
     const animation = useAnimation();
