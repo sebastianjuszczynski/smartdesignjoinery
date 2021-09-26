@@ -16,7 +16,7 @@ const Motto = () => {
         if (inView) {
             animation.start('visible');
         }
-    }, [inView]);
+    }, [inView, animation]);
 
     return (
         <Text as={motion.h2} id="motto"

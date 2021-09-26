@@ -2,20 +2,20 @@ import React from 'react';
 import Form from '../Form/index';
 import FormHeader from '../FormHeader';
 import ScrollToTop from '../ScrollToTop';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
-const pathVariants = {
-    hidden: {
-        pathLength: 0
-    },
-    visible: {
-        pathLength: 1,
-        transition: {
-            duration: 5,
-            ease: "easeInOut",
-        }
-    }
-};
+// const pathVariants = {
+//     hidden: {
+//         pathLength: 0
+//     },
+//     visible: {
+//         pathLength: 1,
+//         transition: {
+//             duration: 5,
+//             ease: "easeInOut",
+//         }
+//     }
+// };
 
 const Contact = () => {
     return (

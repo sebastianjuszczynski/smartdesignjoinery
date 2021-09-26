@@ -19,7 +19,7 @@ const ParallaxSection = () => {
         if (inView) {
             animation.start('visible');
         }
-    }, [inView]);
+    }, [inView, animation]);
     return (
         <Container>
             <Parallax bgImage={carpenter} bgImageAlt="carpenter" strength={150}

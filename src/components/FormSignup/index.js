@@ -9,7 +9,7 @@ import './style.css';
 
 
 const FormSignup = ({ submitForm }) => {
-  const { handleChange, errors, values, setValues, setErrors, setIsSubmitting } = useForm(
+  const { handleChange, errors, values, setValues, setErrors } = useForm(
     submitForm,
     validate
   );

@@ -141,12 +141,8 @@ const Grid = () => {
     const counter = useRef(0);
     const imageLoaded = () => {
         counter.current += 1;
-        console.log(counter)
-        console.log(loading)
         if (counter.current >= images.length) {
             setLoading(false);
-            console.log(loading)
-            console.log(images.length <= counter.current ? "tak" : "nie")
         }
     }
 

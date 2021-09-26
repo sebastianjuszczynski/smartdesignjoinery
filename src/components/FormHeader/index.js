@@ -17,7 +17,7 @@ const FormHeader = (props) => {
         if (inView) {
             animation.start('visible');
         }
-    }, [inView]);
+    }, [inView, animation]);
 
     return (
         <FormH3 as={motion.h3}

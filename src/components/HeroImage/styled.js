@@ -84,6 +84,7 @@ export const Arrow = styled.a`
 `;
 export const Container = styled.div`
     height: calc(100vh - 60px);
+    overflow: hidden;
     @media (max-width: 768px) {
         height: calc(100vh - 100px);
     }

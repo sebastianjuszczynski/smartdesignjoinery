@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import GalleryHeader from '../GalleryHeader';
 import Grid from '../Grid';
 import ScrollToTop from '../ScrollToTop';

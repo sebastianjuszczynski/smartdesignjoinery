@@ -16,7 +16,7 @@ const OurService = () => {
         if (inView) {
             animation.start('visible');
         }
-    }, [inView]);
+    }, [inView, animation]);
     return (
         <Container>
             <Title as={motion.h2}
