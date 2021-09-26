@@ -30,7 +30,7 @@ const Motto = () => {
                     transition: { type: "spring", stiffness: 300, delay: 0.3, duration: 2 }
                 },
                 hidden: {
-                    x: 250,
+                    x: -100,
                     opacity: 0
                 }
             }}

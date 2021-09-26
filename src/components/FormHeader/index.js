@@ -24,10 +24,12 @@ const FormHeader = (props) => {
             ref={ref}
             variants={{
                 hidden: {
-                    x: -1000
+                    x: -300,
+                    opacity: 0
                 },
                 visible: {
-                    x:0,
+                    x: 0,
+                    opacity: 1,
                     transition: { type: "spring", stiffness: 150, delay: 0.3, duration: 2 }
                 }
             }}

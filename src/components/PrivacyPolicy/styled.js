@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     background-color: #F0F0F0; 
     padding-bottom: 100px;  
+    overflow: hidden;
     @media (max-width: 768px) {
         padding-bottom: 70px;
     }
