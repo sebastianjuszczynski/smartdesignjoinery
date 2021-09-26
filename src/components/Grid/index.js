@@ -119,7 +119,7 @@ import img115 from "../../assets/Gallery/115.jpg";
 import { MasonryContainer, IMG } from './styled';
 import { SRLWrapper } from "simple-react-lightbox";
 import { motion } from 'framer-motion';
-import './index.css';
+import { BoxLoading } from 'react-loadingg';
 
 const variants = {
     visible: i => ({
@@ -157,13 +157,13 @@ const Grid = () => {
                     columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1100: 4 }}
                 >
                     <div style={{ display: loading ? "block" : "none" }}>
-                        Loading images,
+                    <BoxLoading />
                     </div>
                     <Masonry
 
                         gutter="10px">
                         {images.map((image, i) => (
-                                <motion.img className="image" 
+                                <IMG as={motion.img} 
                                 style={{ display: loading ? "none" : "block" }}
                                 key={i}
                                 src={image}
