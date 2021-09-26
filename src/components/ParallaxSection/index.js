@@ -6,18 +6,6 @@ import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from "framer-motion";
 
-const parallaxVariants = {
-    hidden: {
-      opacity: 0      
-    },
-    visible: {
-      opacity: 1,      
-      transition: { 
-        duration: 2
-      }
-    }
-  };
-
 
 const ParallaxSection = () => {
 
