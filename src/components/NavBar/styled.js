@@ -15,6 +15,7 @@ export const NavigationContainer = styled.div`
     text-transform: uppercase;
     z-index: 1;
     background-color: ${({location}) => location === "/home" ? "rgba(0,0,0, 0.5)" : "black"};
+    overflow: hidden;
     
     @media (max-width: 768px) {
         height: 100px;
