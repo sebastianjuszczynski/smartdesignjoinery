@@ -40,6 +40,7 @@ export const Text = styled.div`
     left: 0;
     color: white;
     margin-left: 100px;
+    overflow: hidden;
 
     @media (max-width: 768px) {
         margin: 0 auto;
