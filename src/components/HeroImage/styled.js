@@ -40,7 +40,7 @@ export const Text = styled.div`
     left: 0;
     color: white;
     margin-left: 100px;
-    overflow: hidden;
+    /* overflow: hidden; */
 
     @media (max-width: 768px) {
         margin: 0 auto;
@@ -85,7 +85,7 @@ export const Arrow = styled.a`
 `;
 export const Container = styled.div`
     height: calc(100vh - 60px);
-    overflow: hidden;
+    /* overflow: hidden; */
     @media (max-width: 768px) {
         height: calc(100vh - 100px);
     }

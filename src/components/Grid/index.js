@@ -119,7 +119,7 @@ import img115 from "../../assets/Gallery/115.jpg";
 import { MasonryContainer, IMG } from './styled';
 import { SRLWrapper } from "simple-react-lightbox";
 import { motion } from 'framer-motion';
-import { BoxLoading } from 'react-loadingg';
+import { WaveLoading } from 'react-loadingg';
 
 const variants = {
     visible: i => ({
@@ -141,7 +141,7 @@ const Grid = () => {
     const counter = useRef(0);
     const imageLoaded = () => {
         counter.current += 1;
-        if (counter.current >= 20) {
+        if (counter.current >= images.length) {
             setLoading(false);
         }
     }
@@ -153,7 +153,11 @@ const Grid = () => {
                     columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1100: 4 }}
                 >
                     <div style={{ display: loading ? "block" : "none" }}>
-                    <BoxLoading />
+                    <WaveLoading 
+                    color="#6C3A13"
+                    size="large"
+
+                    />
                     </div>
                     <Masonry
 
