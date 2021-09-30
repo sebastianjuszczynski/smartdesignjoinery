@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterParagraph = styled.p`
-    position: ${({location}) => location === "/home" ? "relative" : "fixed"};
+    position: ${({location}) => location === "/home" || "/contact" ? "relative" : "fixed"};
     bottom: 0;
     left: 0;
     right: 0;
@@ -10,4 +10,6 @@ export const FooterParagraph = styled.p`
     padding: 15px;
     margin: 0;
     text-align: center;
-`;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }`;
