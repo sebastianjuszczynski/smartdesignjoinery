@@ -72,13 +72,13 @@ const FormSignup = ({ submitForm }) => {
         <motion.path variants={pathVariants} initial="hidden" animate="visible"
           fill="#FFF"
           stroke="#000"
-          strokeWidth="10"
+          strokeWidth="15"
           d="M256 220.349l256-85.334V94.068c0-17.688-14.328-32-32-32H32c-17.672 0-32 14.313-32 32v40.947l256 85.334z"
         ></motion.path>
         <motion.path variants={pathVariants} initial="hidden" animate="visible"
           fill="#FFF"
           stroke="#000"
-          strokeWidth="10"
+          strokeWidth="15"
           d="M266.125 286.344A32.107 32.107 0 01256 288c-3.422 0-6.828-.563-10.125-1.656L0 204.385V416c0 17.688 14.328 32 32 32h448c17.672 0 32-14.313 32-32V204.385l-245.875 81.959z"
         ></motion.path>
       
