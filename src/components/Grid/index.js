@@ -120,6 +120,7 @@ import { MasonryContainer, IMG } from './styled';
 import { SRLWrapper } from "simple-react-lightbox";
 import { motion } from 'framer-motion';
 import { WaveLoading } from 'react-loadingg';
+import Pagination from '../Pagination';
 
 const variants = {
     visible: i => ({
@@ -137,11 +138,22 @@ const variants = {
 const Grid = () => {
     const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, img37, img38, img39, img40, img41, img42, img43, img44, img45, img46, img47, img48, img49, img50, img51, img52, img53, img54, img55, img56, img57, img58, img59, img60, img61, img62, img63, img64, img65, img66, img67, img68, img69, img70, img71, img72, img73, img74, img75, img76, img77, img78, img79, img80, img81, img82, img83, img84, img85, img86, img87, img88, img89, img90, img91, img92, img93, img94, img95, img96, img97, img98, img99, img100, img101, img102, img103, img104, img105, img106, img107, img108, img109, img110, img111, img112, img113, img114, img115, img35]
 
+    const [currentPage, setCurrentPage] = useState(1);
+    const [imagesPerPage] = useState(12);
+
+
+    const indexOfLastImage = currentPage * imagesPerPage;
+    const indexOfFirstImage = indexOfLastImage - imagesPerPage;
+    const currentImages = images.slice(indexOfFirstImage, indexOfLastImage);
+    const paginate = pageNumber => setCurrentPage(pageNumber);
+
+
+
     const [loading, setLoading] = useState(true);
     const counter = useRef(0);
     const imageLoaded = () => {
         counter.current += 1;
-        if (counter.current >= images.length) {
+        if (counter.current >= currentImages.length) {
             setLoading(false);
         }
     }
@@ -153,20 +165,20 @@ const Grid = () => {
                     columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1100: 4 }}
                 >
                     <div style={{ display: loading ? "block" : "none" }}>
-                    <WaveLoading 
-                    color="#6C3A13"
-                    size="large"
+                        <WaveLoading
+                            color="#6C3A13"
+                            size="large"
 
-                    />
+                        />
                     </div>
                     <Masonry
 
                         gutter="10px">
-                        {images.map((image, i) => (
-                                <IMG as={motion.img} 
+                        {currentImages.map((currentImage, i) => (
+                            <IMG as={motion.img}
                                 style={{ display: loading ? "none" : "block" }}
                                 key={i}
-                                src={image}
+                                src={currentImage}
                                 alt=""
                                 custom={i}
                                 animate="visible"
@@ -179,6 +191,11 @@ const Grid = () => {
                     </Masonry>
                 </ResponsiveMasonry>
             </MasonryContainer>
+            <Pagination 
+                imagesPerPage={imagesPerPage}
+                totalImages={images.length}
+                paginate={paginate}
+            />
         </SRLWrapper>
     )
 }
