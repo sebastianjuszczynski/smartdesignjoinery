@@ -62,6 +62,7 @@ export const FormInputButton = styled.button`
     padding: 10px;
     @media (max-width: 768px) {
         width: 90%;
+        margin-bottom: 40px;
     }
    
     &:hover {
@@ -77,8 +78,8 @@ export const Container = styled.div`
     margin-top: 50px;
     @media (max-width: 768px) {
         flex-wrap: wrap;
-        margin-top: 100px;
-        margin-bottom: 25px;
+        margin-top: 110px;
+        margin-bottom: 10px;
     }
 `;
 export const ContainerItem = styled.div`
