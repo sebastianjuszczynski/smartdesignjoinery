@@ -46,6 +46,60 @@ export const FormTextarea = styled.textarea`
         font-size: 12px; 
     }
 `;
+export const Container = styled.div`
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        margin-top: 110px;
+        margin-bottom: 10px;
+    }
+`;
+export const ContainerItem = styled.div`
+    display: flex;
+    align-items: center;
+    margin: 5px 30px;
+    @media (max-width: 768px) {
+        margin-left: 0;
+    }
+`;
+export const Link = styled.a`
+    text-decoration: none;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+    &:hover {
+        color: grey;
+    }
+`;
+
+export const Icon = styled.svg`
+  stroke: black;
+  fill: white;
+  stroke-width: 15;
+  width: 50px;
+  height: 30px;
+  transition: 1s;
+  ${ContainerItem}:hover & {
+    fill: #f2f1a0;
+  }
+`;
+export const Icon2 = styled.svg`
+  stroke: black;
+  fill: white;
+  stroke-width: 2;
+  width: 50px;
+  height: 30px;
+  transition: 1s;
+  ${ContainerItem}:hover & {
+    fill: rgb(70, 26, 4);
+  }
+`;
 export const FormInputButton = styled.button`
     width: 80%;
     height: 50px;
@@ -69,38 +123,5 @@ export const FormInputButton = styled.button`
         cursor: pointer;
         background: rgb(114, 66, 43);    
     }
-`;
-
-export const Container = styled.div`
-    display: flex;
-    width: 100%;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    @media (max-width: 768px) {
-        flex-wrap: wrap;
-        margin-top: 110px;
-        margin-bottom: 10px;
-    }
-`;
-export const ContainerItem = styled.div`
-    display: flex;
-    align-items: center;
-    margin: 5px 30px;
-    @media (max-width: 768px) {
-        margin-left: 0;
-    }
     
-`;
-
-export const Link = styled.a`
-    text-decoration: none;
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-    @media (max-width: 768px) {
-        font-size: 14px;
-    }
-    &:hover {
-        color: grey;
-    }
 `;
