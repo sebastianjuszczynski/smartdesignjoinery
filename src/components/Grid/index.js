@@ -191,11 +191,13 @@ const Grid = () => {
                     </Masonry>
                 </ResponsiveMasonry>
             </MasonryContainer>
+            <div style={{ display: loading ? "none" : "block" }}>
             <Pagination 
                 imagesPerPage={imagesPerPage}
                 totalImages={images.length}
                 paginate={paginate}
             />
+            </div>
         </SRLWrapper>
     )
 }

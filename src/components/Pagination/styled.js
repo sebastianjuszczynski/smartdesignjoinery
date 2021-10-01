@@ -9,7 +9,7 @@ export const List = styled.ul`
     justify-content: center;
     list-style: none;
     font-size: 18px;
-    color: blue;
+    color: #42AFE2;
     @media (max-width: 768px) {
         font-size: 14px;
     }
@@ -20,10 +20,10 @@ export const Item = styled.li`
 export const Link = styled.a`
     cursor: pointer;
     &:hover {
-        text-decoration: underline;
+        text-decoration: underline;       
     }
     &:active {
-        color: red;
+        color: green;
         font-weight: bold;
     }
     &:visited {
