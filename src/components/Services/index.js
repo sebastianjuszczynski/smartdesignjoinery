@@ -19,7 +19,8 @@ const Services = () => {
                 <Image></Image>
                 <InfoContainer>
                     <Title>Stairs</Title>
-                    <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
+                    <Description>Stairs made with love.
+                        Our stair is designed with the most rigorous construction process possible to make sure it lasts for life.</Description>
                     <StyledLink to="/gallery">See gallery</StyledLink>
                 </InfoContainer>
             </Flexbox>
@@ -29,7 +30,8 @@ const Services = () => {
                         <Image2></Image2>
                         <InfoContainer>
                             <Title>Wardrobe</Title>
-                            <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
+                            <Description>Made to order
+                                All units are custom made-to-order to assure that your design is both your own and unique. We won't stop until you're 100% satisfied!</Description>
                             <StyledLink to="/gallery">See gallery</StyledLink>
                         </InfoContainer>
                     </>
@@ -38,7 +40,8 @@ const Services = () => {
                     <>
                         <InfoContainer>
                             <Title>Wardrobe</Title>
-                            <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
+                            <Description>Made to order.
+                                All units are custom made-to-order to assure that your design is both your own and unique. We won't stop until you're 100% satisfied!</Description>
                             <StyledLink to="/gallery">See gallery</StyledLink>
                         </InfoContainer>
                         <Image2></Image2>
@@ -49,7 +52,7 @@ const Services = () => {
                 <Image3></Image3>
                 <InfoContainer>
                     <Title>Doors</Title>
-                    <Description>Veritatis tempore labore, fugit quis nihil temporibus minima. Tenetur suscipit quibusdam ab necessitatibus aut libero hic eaque dolor a.</Description>
+                    <Description>Choose from a variety of styles and designs to find the perfect door for your needs - no matter how minimalistic or luxurious you're looking for. With our selection, we're sure there's something for everyone.</Description>
                     <StyledLink to="/gallery">See gallery</StyledLink>
                 </InfoContainer>
             </Flexbox>

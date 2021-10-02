@@ -49,9 +49,8 @@ export const Image = styled.img`
     background-image: url(${Stairs});
     background-position: center;
     background-size: cover;
-    height: 50%;
+    height: 45%;
     width: 100%;
-    margin-bottom: 15px;
     @media (max-width: 1140px) {
         height: 40vh;
         margin-bottom: 0;
@@ -62,9 +61,8 @@ export const Image2 = styled.img`
     background-image: url(${Wardrobe});
     background-position: center;
     background-size: cover;
-    height: 50%;
+    height: 45%;
     width: 100%;
-    margin-top: 15px;
     @media (max-width: 1140px) {
         height: 40vh;
     }
@@ -74,9 +72,8 @@ export const Image3 = styled.img`
     background-image: url(${Doors});
     background-position: center;
     background-size: cover;
-    height: 50%;
+    height: 45%;
     width: 100%;
-    margin-bottom: 15px;
     @media (max-width: 1140px) {
         height: 40vh;
         margin-top: 50px;
@@ -88,12 +85,15 @@ export const Title = styled.h3`
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 10px;
     @media (max-width: 768px) {
         font-size: 20px;
     }
 `;
 
 export const Description = styled.p`
+    padding: 0 10px;
     text-align: center;
     @media (max-width: 768px) {
         font-size: 16px;
@@ -103,7 +103,7 @@ export const Description = styled.p`
 export const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
-    height: 50%;
+    height: 55%;
     background-color: #F4F5F6;
     align-items: center;
     @media (max-width: 768px) {
