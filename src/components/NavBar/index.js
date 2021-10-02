@@ -7,7 +7,6 @@ import { toHome } from "../../routes";
 const NavBar = (props) => {
     return (
         <NavigationContainer location={props.location.pathname}>
-            {/* {console.log(props)} */}
             <StyledNavLink to={toHome()}><Logo src={LogoImg}></Logo></StyledNavLink>
             <Burger /> 
         </NavigationContainer>
