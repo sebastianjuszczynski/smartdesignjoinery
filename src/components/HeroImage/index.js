@@ -4,19 +4,19 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
 const textVariants = {
-    initial: {
+    hidden: {
         x: '-100vw'
     },
-    animate: {
+    visible: {
         x: 0,
         transition: { type: "spring", stiffness: 120  }
     },
 };
 const nextVariants = {
-    initial: {
+    hidden: {
         x: '-100vw'
     },
-    animate: {
+    visible: {
         x: 0,
         transition: { type: "spring", delay: 0.5, stiffness: 120 }
     },
@@ -32,14 +32,14 @@ const HeroImage = () => {
             <Text>
                 <TextBig as={motion.h2}
                     variants={textVariants}
-                    initial="initial"
-                    animate="animate"
+                    initial="hidden"
+                    animate="visible"
                 >
                     Smart Design Joinery</TextBig>
                 <TextSmall as={motion.h3}
                     variants={nextVariants}
-                    initial="initial"
-                    animate="animate"
+                    initial="hidden"
+                    animate="visible"
                 >
                     Vision, Passion, Purpose</TextSmall>
             </Text>

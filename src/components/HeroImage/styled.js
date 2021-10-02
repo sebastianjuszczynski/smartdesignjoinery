@@ -40,34 +40,30 @@ export const Text = styled.div`
     left: 0;
     color: white;
     margin-left: 100px;
-    /* overflow: hidden; */
-
+    
     @media (max-width: 768px) {
         margin: 0 auto;
         width: 100%;
         text-align: center;
+        overflow: hidden;
     }
 `;
 export const TextBig = styled.h2`
-    font-size: 3em;
+    font-size: 48px;
     padding: 10px;
     background: rgba(0,0,0, 0.6);
     margin-bottom: 0;
-
     @media (max-width: 768px) {
-        font-size: 1.8rem;
-
+        font-size: 26px;
     }
 `;
 export const TextSmall = styled.h3`
-   font-size: 2em; 
+   font-size: 32px; 
    padding: 10px;
    background: rgba(0,0,0, 0.6);
    margin-top: 10px;
-
    @media (max-width: 768px) {
-        font-size: 1.4rem;
-
+        font-size: 22px;
     }
 `;
 export const ArrowDown = styled.div`
@@ -81,11 +77,11 @@ export const ArrowDown = styled.div`
 `;
 export const Arrow = styled.a`
     color: white;
-    font-size: 3em;
+    font-size: 48px;
 `;
 export const Container = styled.div`
     height: calc(100vh - 60px);
-    /* overflow: hidden; */
+    overflow: hidden;
     @media (max-width: 768px) {
         height: calc(100vh - 100px);
     }
