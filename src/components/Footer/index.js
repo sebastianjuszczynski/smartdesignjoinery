@@ -2,9 +2,9 @@ import React from 'react';
 import { withRouter } from "react-router-dom";
 import { FooterParagraph } from './styled';
 
-const Footer = (props) => {
+const Footer = ({ location }) => {
     return (
-        <FooterParagraph location={props.location.pathname}>Smart Design Joinery&copy;. All rights reserved</FooterParagraph>
+        <FooterParagraph location={location.pathname}>Smart Design Joinery&copy;. All rights reserved</FooterParagraph>
     )
 }
 
