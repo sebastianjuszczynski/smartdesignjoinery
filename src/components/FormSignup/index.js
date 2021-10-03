@@ -2,10 +2,7 @@ import React, { useRef } from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
 import { FormInputs, FormLabel, FormInput, FormTextarea, FormInputButton, Container, ContainerItem, Link, Icon, Icon2 } from "./styled";
-import emailjs from 'emailjs-com';
-
 import './style.css';
-
 import { motion } from 'framer-motion';
 
 const pathVariants = {
@@ -21,59 +18,34 @@ const pathVariants = {
   }
 };
 
-
-
 const FormSignup = ({ submitForm }) => {
-  const { handleChange, errors, values, setValues, setErrors } = useForm(
+  const { handleChange, errors, values, handleSubmit, handleClick } = useForm(
     submitForm,
     validate
   );
   const form = useRef();
-  const sendEmail = (e) => {
-    
-    e.preventDefault();
-    setErrors(validate(values));
-    // setIsSubmitting(true);
-
-
-    emailjs.sendForm('Gmail', 'template_lgc1ezc', e.target, 'user_S84rE02uoYvJJVbKOZwK3')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
-
-    e.target.reset();
-    setValues({
-      username: '',
-      email: '',
-      message: ''
-    });
-    console.log(e.target);
-  };
-
 
   return (
     <>
-      <form className='form' noValidate onSubmit={sendEmail} ref={form}>
+      <form className='form' noValidate onSubmit={handleSubmit} ref={form}>
         <FormInputs>
           <Container>
             <ContainerItem>
-            <Icon
-      xmlns="http://www.w3.org/2000/svg"
-      shapeRendering="geometricPrecision"
-      textRendering="geometricPrecision"
-      viewBox="0 0 512 512"
-    >
-      
-        <motion.path variants={pathVariants} initial="hidden" animate="visible"
-          d="M256 220.349l256-85.334V94.068c0-17.688-14.328-32-32-32H32c-17.672 0-32 14.313-32 32v40.947l256 85.334z"
-        ></motion.path>
-        <motion.path variants={pathVariants} initial="hidden" animate="visible"
-          d="M266.125 286.344A32.107 32.107 0 01256 288c-3.422 0-6.828-.563-10.125-1.656L0 204.385V416c0 17.688 14.328 32 32 32h448c17.672 0 32-14.313 32-32V204.385l-245.875 81.959z"
-        ></motion.path>
-      
-    </Icon> 
+              <Icon
+                xmlns="http://www.w3.org/2000/svg"
+                shapeRendering="geometricPrecision"
+                textRendering="geometricPrecision"
+                viewBox="0 0 512 512"
+              >
+
+                <motion.path variants={pathVariants} initial="hidden" animate="visible"
+                  d="M256 220.349l256-85.334V94.068c0-17.688-14.328-32-32-32H32c-17.672 0-32 14.313-32 32v40.947l256 85.334z"
+                ></motion.path>
+                <motion.path variants={pathVariants} initial="hidden" animate="visible"
+                  d="M266.125 286.344A32.107 32.107 0 01256 288c-3.422 0-6.828-.563-10.125-1.656L0 204.385V416c0 17.688 14.328 32 32 32h448c17.672 0 32-14.313 32-32V204.385l-245.875 81.959z"
+                ></motion.path>
+
+              </Icon>
               <Link href="mailto:smartdesignjoinery@gmail.com">smartdesignjoinery@gmail.com</Link>
             </ContainerItem>
             <ContainerItem>
@@ -122,7 +94,7 @@ const FormSignup = ({ submitForm }) => {
           </FormTextarea>
           {errors.message && <p>{errors.message}</p>}
         </FormInputs>
-        <FormInputButton type='submit'>
+        <FormInputButton type='submit' onClick={handleClick}>
           Send
         </FormInputButton>
       </form>
