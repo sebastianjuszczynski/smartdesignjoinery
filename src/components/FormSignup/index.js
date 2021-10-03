@@ -29,8 +29,8 @@ const FormSignup = ({ submitForm }) => {
     validate
   );
   const form = useRef();
-
   const sendEmail = (e) => {
+    
     e.preventDefault();
     setErrors(validate(values));
     // setIsSubmitting(true);

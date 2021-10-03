@@ -36,34 +36,34 @@ const FormHeader = (props) => {
             initial="hidden"
             animate={animation}
             location={props.location.pathname}>Contact <FormSpan as={motion.span}
-            ref={ref}
+                ref={ref}
                 variants={{
                     hidden: {
-                        opacity: 0      
-                      },
-                      visible: {
-                        opacity: 1,      
-                        transition: { 
-                          duration: 3
+                        opacity: 0
+                    },
+                    visible: {
+                        opacity: 1,
+                        transition: {
+                            duration: 3
                         }
-                      }
-                }} 
-                initial="hidden" 
+                    }
+                }}
+                initial="hidden"
                 animate={animation}
             >with us</FormSpan> and check<br />what we can do <FormSpan as={motion.span}
-            ref={ref}
+                ref={ref}
                 variants={{
                     hidden: {
-                        opacity: 0      
-                      },
-                      visible: {
-                        opacity: 1,      
-                        transition: { 
-                          duration: 3
+                        opacity: 0
+                    },
+                    visible: {
+                        opacity: 1,
+                        transition: {
+                            duration: 3
                         }
-                      }
-                }} 
-                initial="hidden" 
+                    }
+                }}
+                initial="hidden"
                 animate={animation}
             >together!</FormSpan></FormH3>
     )

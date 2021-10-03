@@ -6,7 +6,7 @@ const Form = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
 
-  function submitForm() {
+  const submitForm = () => {
     setIsSubmitted(true);
   }
 
@@ -14,7 +14,7 @@ const Form = () => {
     <>
       <Container>
         {!isSubmitted ? (
-          <FormSignup submitForm={submitForm}/>
+          <FormSignup submitForm={submitForm} />
         ) : (
           window.location.reload(false)
         )}
