@@ -30,7 +30,6 @@ export const Logo = styled.img`
     margin-left: 100px;
     height: 60px;
     
-    
     @media (max-width: 768px) {
         margin: 0 auto;
         z-index: 2;

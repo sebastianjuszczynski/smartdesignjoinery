@@ -13,6 +13,7 @@ export const StyledLink = styled(Link)`
     padding: 10px 15px;
     color: #6C3A13;
     transition: 0.3s;
+
     &:hover {
         border: 2px solid #ffffff;
         color: #ffffff;
@@ -106,6 +107,7 @@ export const InfoContainer = styled.div`
     height: 55%;
     background-color: #F4F5F6;
     align-items: center;
+    justify-content: space-evenly;
     @media (max-width: 768px) {
         padding: 15px 0;
     }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {ArrowUp, Arrow} from "./styled";
+import { ArrowUp, Arrow } from "./styled";
 
 const ScrollToTop = () => {
     const [scrollY, setScrollY] = useState(window.scrollY);
@@ -13,13 +13,12 @@ const ScrollToTop = () => {
 
     const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
-
     return (
-         <>
-         {scrollY > breakpoint &&
-        <ArrowUp onClick={scrollToTop}>
-            <Arrow><i className="icon fas fa-chevron-up"></i></Arrow>
-        </ArrowUp>}
+        <>
+            {scrollY > breakpoint &&
+                <ArrowUp onClick={scrollToTop}>
+                    <Arrow><i className="icon fas fa-chevron-up"></i></Arrow>
+                </ArrowUp>}
         </>
     );
 };

@@ -20,7 +20,7 @@ const Services = () => {
                 <InfoContainer>
                     <Title>Stairs</Title>
                     <Description>Stairs made with love.
-                        Our stair is designed with the most rigorous construction process possible to make sure it lasts for life.</Description>
+                        Our stairs are designed with the most rigorous construction process possible to make sure it lasts for life. Our designs are timeless, and we use only the best materials - no shortcuts here!</Description>
                     <StyledLink to="/gallery">See gallery</StyledLink>
                 </InfoContainer>
             </Flexbox>

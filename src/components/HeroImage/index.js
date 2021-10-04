@@ -22,7 +22,6 @@ const nextVariants = {
     },
 };
 
-
 const HeroImage = () => {
 
     return (
@@ -46,7 +45,6 @@ const HeroImage = () => {
             <ArrowDown class="arrow bounce">
                 <Arrow><Link to="motto" spy={true} smooth={true}><i class="fas fa-chevron-down"></i></Link></Arrow>
             </ArrowDown>
-     
         </Container>
     )
 }

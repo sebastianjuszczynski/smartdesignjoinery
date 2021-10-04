@@ -1,5 +1,10 @@
 import React, { useState, useRef } from 'react';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { MasonryContainer, IMG } from './styled';
+import { SRLWrapper } from "simple-react-lightbox";
+import { motion } from 'framer-motion';
+import { WaveLoading } from 'react-loadingg';
+import Pagination from '../Pagination';
 import img1 from "../../assets/Gallery/1.jpg";
 import img2 from "../../assets/Gallery/2.jpg";
 import img3 from "../../assets/Gallery/3.jpg";
@@ -116,11 +121,6 @@ import img113 from "../../assets/Gallery/113.jpg";
 import img114 from "../../assets/Gallery/114.jpg";
 import img115 from "../../assets/Gallery/115.jpg";
 
-import { MasonryContainer, IMG } from './styled';
-import { SRLWrapper } from "simple-react-lightbox";
-import { motion } from 'framer-motion';
-import { WaveLoading } from 'react-loadingg';
-import Pagination from '../Pagination';
 
 const variants = {
     visible: i => ({
@@ -141,13 +141,10 @@ const Grid = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [imagesPerPage] = useState(12);
 
-
     const indexOfLastImage = currentPage * imagesPerPage;
     const indexOfFirstImage = indexOfLastImage - imagesPerPage;
     const currentImages = images.slice(indexOfFirstImage, indexOfLastImage);
     const paginate = pageNumber => setCurrentPage(pageNumber);
-
-
 
     const [loading, setLoading] = useState(true);
     const counter = useRef(0);
@@ -168,11 +165,9 @@ const Grid = () => {
                         <WaveLoading
                             color="#6C3A13"
                             size="large"
-
                         />
                     </div>
                     <Masonry
-
                         gutter="10px">
                         {currentImages.map((currentImage, i) => (
                             <IMG as={motion.img}
@@ -192,11 +187,11 @@ const Grid = () => {
                 </ResponsiveMasonry>
             </MasonryContainer>
             <div style={{ display: loading ? "none" : "block" }}>
-            <Pagination 
-                imagesPerPage={imagesPerPage}
-                totalImages={images.length}
-                paginate={paginate}
-            />
+                <Pagination
+                    imagesPerPage={imagesPerPage}
+                    totalImages={images.length}
+                    paginate={paginate}
+                />
             </div>
         </SRLWrapper>
     )

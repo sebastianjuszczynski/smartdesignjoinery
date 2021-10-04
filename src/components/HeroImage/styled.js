@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { keyframes } from "styled-components";
 import background from "../../assets/background.jpg";
 
-
 const bounce = keyframes` {
     0%, 20%, 50%, 80%, 100% {
       transform: translateY(0);

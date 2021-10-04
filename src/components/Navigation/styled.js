@@ -34,7 +34,6 @@ export const NavList = styled.ul`
     margin-right: 100px;
     font-size: 20px;
     
-
     @media (max-width: 768px) {
         flex-flow: column nowrap;
         background-image: url(${Menu});

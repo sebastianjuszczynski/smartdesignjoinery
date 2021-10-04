@@ -8,7 +8,7 @@ const textVariants = {
     },
     visible: {
         x: 0,
-        transition: { type: "spring", stiffness: 100, duration: 2  }
+        transition: { type: "spring", stiffness: 100, duration: 2 }
     },
 };
 
