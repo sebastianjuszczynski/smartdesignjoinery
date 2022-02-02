@@ -12,6 +12,5 @@ export const FooterParagraph = styled.p`
     text-align: center;
     @media (max-width: 768px) {
         font-size: 14px;
-        bottom: 20px;
         margin-top: ${({location}) => location === "/home" ? "35px" : "-40px"}
     }`;
