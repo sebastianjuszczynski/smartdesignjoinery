@@ -125,7 +125,7 @@ export const FormInputButton = styled.button`
     
 `;
 export const Form = styled.div`
-    position: relative;
+    position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
