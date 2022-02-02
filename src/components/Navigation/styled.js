@@ -20,9 +20,10 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     }
     @media (max-width: 768px) {
         margin-right: 0;
-        font-size: 25px;
-        padding: 30px 180px;
+        font-size: 28px;
+        padding: 10px;
         text-align: center;
+        letter-spacing: 5px;
     }
 `;
 
@@ -46,9 +47,7 @@ export const NavList = styled.ul`
         right: 0;
         height: 100vh;
         width: 100vw;
-        padding-top: 3rem;
-        justify-content: space-evenly;
-        font-size: 32px;
+        justify-content: center;
         transition: transform 0.3s ease-in-out;
         z-index: -1;
         align-items: center;
