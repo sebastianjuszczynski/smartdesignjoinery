@@ -7,12 +7,7 @@ const activeClassName = "active";
 export const StyledNavLink = styled(NavLink).attrs(() => ({
     activeClassName,
 }))`
-    display: flex;
-    list-style: none;
-    padding: 0;
-    letter-spacing: 2px;
     margin-right: 15px;
-    font-size: 20px;
     text-decoration: none;
     color: white;
     &.${activeClassName} {
@@ -23,7 +18,6 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
         font-size: 28px;
         padding: 10px;
         text-align: center;
-        letter-spacing: 5px;
     }
 `;
 
@@ -51,5 +45,6 @@ export const NavList = styled.ul`
         transition: transform 0.3s ease-in-out;
         z-index: -1;
         align-items: center;
+        letter-spacing: 5px;
     }
 `;

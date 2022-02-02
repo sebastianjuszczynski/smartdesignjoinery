@@ -49,7 +49,6 @@ export const FormTextarea = styled.textarea`
 export const Container = styled.div`
     display: flex;
     width: 100%;
-    margin-bottom: 50px;
     margin-top: 50px;
     @media (max-width: 768px) {
         flex-wrap: wrap;
@@ -124,4 +123,16 @@ export const FormInputButton = styled.button`
         background: rgb(114, 66, 43);    
     }
     
+`;
+export const Form = styled.div`
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `;
