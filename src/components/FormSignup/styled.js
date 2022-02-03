@@ -124,15 +124,3 @@ export const FormInputButton = styled.button`
     }
     
 `;
-export const Form = styled.div`
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`;

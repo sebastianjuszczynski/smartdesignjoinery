@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
-import { Form, FormInputs, FormLabel, FormInput, FormTextarea, FormInputButton, Container, ContainerItem, Link, Icon, Icon2 } from "./styled";
-
+import { FormInputs, FormLabel, FormInput, FormTextarea, FormInputButton, Container, ContainerItem, Link, Icon, Icon2 } from "./styled";
+import './style.css';
 import { motion } from 'framer-motion';
 
 const pathVariants = {
@@ -27,7 +27,7 @@ const FormSignup = ({ submitForm }) => {
 
   return (
     <>
-      <Form className='form' noValidate onSubmit={handleSubmit} ref={form}>
+      <form className='form' noValidate onSubmit={handleSubmit} ref={form}>
         <FormInputs>
           <Container>
             <ContainerItem>
@@ -97,7 +97,7 @@ const FormSignup = ({ submitForm }) => {
         <FormInputButton type='submit' onClick={handleClick}>
           Send
         </FormInputButton>
-      </Form>
+      </form>
     </>
   );
 };
