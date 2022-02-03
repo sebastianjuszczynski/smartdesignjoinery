@@ -73,15 +73,15 @@ export const SubList = styled.ul`
     display: flex;
     flex-direction: column;
     margin-right: 15px;
+    padding-left: 15px; 
+    cursor: pointer; 
 `;
 export const Box = styled.div`
     position: absolute;
     display: flex;
     flex-direction: column;
     top: 180%;
+    left: 10%;
     color: red;
     background-color: ${({location}) => location === "/home" ? "rgba(0,0,0, 0.5)" : "black"};
-    
-    
-
 `;
