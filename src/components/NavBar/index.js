@@ -4,11 +4,11 @@ import LogoImg from "../../assets/logo.jpg";
 import Burger from "../Burger";
 import { toHome } from "../../routes";
 
-const NavBar = (props) => {
+const NavBar = ({ location }) => {
     return (
-        <NavigationContainer location={props.location.pathname}>
+        <NavigationContainer location={location.pathname}>
             <StyledNavLink to={toHome()}><Logo src={LogoImg}></Logo></StyledNavLink>
-            <Burger /> 
+            <Burger />
         </NavigationContainer>
     )
 }
