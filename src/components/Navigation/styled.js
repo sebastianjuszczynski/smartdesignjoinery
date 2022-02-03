@@ -21,6 +21,25 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     }
 `;
 
+export const StyledNavLink2 = styled(NavLink).attrs(() => ({
+    activeClassName,
+}))`
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px 5px 5px;
+    
+    &.${activeClassName} {
+        font-weight: bold;
+    }
+    @media (max-width: 768px) {
+        margin-right: 0;
+        font-size: 28px;
+        padding: 10px;
+        text-align: center;
+    }
+`;
+
 export const NavList = styled.ul`
     display: flex;
     list-style: none;
@@ -47,4 +66,22 @@ export const NavList = styled.ul`
         align-items: center;
         letter-spacing: 5px;
     }
+`;
+
+export const SubList = styled.ul`
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+`;
+export const Box = styled.div`
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 180%;
+    color: red;
+    background-color: ${({location}) => location === "/home" ? "rgba(0,0,0, 0.5)" : "black"};
+    
+    
+
 `;
