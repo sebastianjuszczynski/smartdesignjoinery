@@ -68,20 +68,31 @@ export const NavList = styled.ul`
     }
 `;
 
-export const SubList = styled.ul`
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-right: 15px;
-    padding-left: 15px; 
-    cursor: pointer; 
-`;
+
 export const Box = styled.div`
     position: absolute;
     display: flex;
     flex-direction: column;
     top: 180%;
     left: 10%;
-    color: red;
-    background-color: ${({location}) => location === "/home" ? "rgba(0,0,0, 0.5)" : "black"};
+    background-color: ${({ location }) => location === "/home" ? "rgba(0,0,0, 0.5)" : "black"};
+    transform: ${({ dropdown }) => dropdown ? "translateY(0)" : "translateY(-200%)"};
+    transition: transform 0.3s ease-in-out;
+`;
+export const SubList = styled.ul`
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    padding-left: 15px; 
+    cursor: pointer;     
+`;
+export const DropdownContainer = styled.div`
+    display: flex;
+`;
+export const Dropdown = styled.div`
+    padding: 0 5px 0 5px;
+    transform: ${({ subnav }) => subnav ? "rotate(180deg)" : "rotate(0)"};
+    transition: transform 0.3s ease-in-out;
+    font-size: 20px;
 `;
